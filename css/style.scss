@@ -24,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 1170px;
+  // width: 1170px;
   height: 100px;
   // margin: 0 auto 100px 215px;
 
@@ -69,7 +69,7 @@
         position: fixed;
         z-index: 7;
         top: 36px;
-        right: 280px;
+        right: 700px;
       }
 
       &__navigation.open &__navigation-list {
@@ -193,7 +193,18 @@
     margin-left: 400px;
     margin-top: -367px;
   }
+
+  @media screen and (max-width: 768px) {
+    &__image-item {
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+  }
 }
+
+
+
 
 .main-block2 {
   // display: flex;
@@ -209,8 +220,8 @@
   background: #FDE8F5;
   border-radius: 50px;
 
-  width: 1170px;
-  height: 560px;
+  // width: 1170px;
+  // height: 560px;
 
   &__article {
     display: flex;
@@ -228,11 +239,6 @@
   &__image-item {}
 
   &__page {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: space-between;
-
     margin-right: 70px;
 
     &__title {
@@ -260,7 +266,7 @@
 
 
 .main-block3 {
-  width: 1170px;
+  // width: 1170px;
   margin-top: 120px;
   // flex-wrap: wrap;
 
@@ -358,6 +364,12 @@
     margin-top: 80px;
 
    // flex-basis: 25%;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__grid {
+      grid-template-columns: 100%;
+    }
   }
 
   &__grid-LT {
@@ -564,8 +576,8 @@
 
 
   &__card {
-    width: 1170px;
-    height: 580px;
+    // width: 1170px;
+    // height: 580px;
 
     background: #CCDDFF;
     border-radius: 50px;
@@ -609,6 +621,14 @@
     color: #212353;
   }
 
+  @media screen and (max-width: 768px) {
+    &__card-grid {
+      grid-template-columns: 100%;
+      
+    }
+  }  
+
+
   &__card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -616,7 +636,7 @@
     grid-gap: 100px;
     margin-top: 80px;
 
-
+   
     &__page {}
 
     &__page-title {
@@ -700,6 +720,7 @@
 }
 
 
+
 .footer-block {
   margin-top: 120px;
   // margin-left: 215px;
@@ -710,7 +731,7 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 1170px;
+    // width: 1170px;
     height: 90px;
 
     &__title {
@@ -841,7 +862,8 @@
     width: 300px;
 
     &__contacts {
-      width: 249px;
+      width: max-width;
+      // width: 249px;
 
       margin-right: 200px;
     }
