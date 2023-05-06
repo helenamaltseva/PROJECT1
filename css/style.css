@@ -67,7 +67,7 @@
     position: fixed;
     z-index: 7;
     top: 36px;
-    right: 700px;
+    right: 450px;
   }
   .header-container__LogoNav__navigation.open .header-container__LogoNav__navigation-list {
     position: fixed;
@@ -332,7 +332,7 @@
     display: none;
   }
   .main-block3__grid-LT__card-content {
-    margin-left: 15px;
+    max-width: 180%;
   }
 }
 .main-block3__grid-LT__card {
@@ -540,16 +540,6 @@
 .main-block4__card-design__imageR {
   width: 580px;
 }
-@media screen and (max-width: 768px) {
-  .main-block4__card-title {
-    margin-left: 100px;
-  }
-  .main-block4__card-grid {
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
-  }
-}
 .main-block4__card-title {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
@@ -569,6 +559,7 @@
      -moz-column-gap: 100px;
           column-gap: 100px;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
   .main-block4__card-grid__left {
@@ -576,14 +567,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 0px;
   }
   .main-block4__card-grid__right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 0px;
   }
 }
 .main-block4__card-grid__page-title {
@@ -647,6 +636,22 @@
 }
 .main-block4__card-grid__right__image-item {
   border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .main-block4__card-title {
+    margin-left: 70px;
+  }
+  .main-block4__card-grid {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .main-block4__card-grid__left {
+    margin-left: 15px;
+  }
+  .main-block4__card-grid__right {
+    margin-left: 0px;
+  }
 }
 
 .footer-block {
@@ -769,6 +774,17 @@
 }
 .footer-block__header__button__item2-inner:hover {
   color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .footer-block__header__button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
 }
 .footer-block__main {
   margin-top: 100px;
